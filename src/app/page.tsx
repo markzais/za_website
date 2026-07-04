@@ -5,6 +5,7 @@ import { Reveal } from "@/components/ui/reveal";
 import { StatItem } from "@/components/ui/stat";
 import { RadialGuides } from "@/components/motifs/radial-guides";
 import { NodeNetwork } from "@/components/motifs/node-network";
+import { LogoMark } from "@/components/logo";
 import { CapabilityCard } from "@/components/capability-card";
 import { IconArrowUpRight } from "@/components/icons";
 import { capabilities } from "@/data/capabilities";
@@ -20,7 +21,9 @@ export default function HomePage() {
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-ink-700 bg-ink-950">
         <div className="absolute inset-0 bg-grid opacity-40" aria-hidden="true" />
-        <RadialGuides className="right-[-220px] top-[-160px] h-[640px] w-[640px] opacity-70 md:right-[-140px] md:h-[820px] md:w-[820px]" />
+        <LogoMark
+          className="pointer-events-none absolute right-[-220px] top-[-160px] h-[640px] w-[640px] animate-spin-slow opacity-[0.06] md:right-[-140px] md:h-[820px] md:w-[820px]"
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-ink-950" aria-hidden="true" />
 
         <Container className="relative flex min-h-[calc(100vh-5rem)] flex-col justify-center py-28">
