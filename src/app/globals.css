@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+:root {
+  --color-ink-950: #0a0a0a;
+  --color-ink-900: #121214;
+  --color-ink-850: #17171a;
+  --color-ink-800: #1c1c20;
+  --color-ink-700: #232327;
+  --color-ink-600: #2f2f34;
+  --color-ink-500: #45454c;
+
+  --color-paper-50: #f7f5f0;
+  --color-paper-200: #dad5c8;
+  --color-paper-400: #a39c8c;
+  --color-paper-600: #706a5e;
+
+  --color-gold-200: #e8d9ae;
+  --color-gold-300: #d4af37;
+  --color-gold-400: #c9a227;
+  --color-gold-500: #9b7f3a;
+  --color-gold-600: #8b7332;
+  --color-gold-700: #6b5828;
+  --color-gold-800: #4a3d1c;
+}
+
+@theme inline {
+  --color-ink-950: var(--color-ink-950);
+  --color-ink-900: var(--color-ink-900);
+  --color-ink-850: var(--color-ink-850);
+  --color-ink-800: var(--color-ink-800);
+  --color-ink-700: var(--color-ink-700);
+  --color-ink-600: var(--color-ink-600);
+  --color-ink-500: var(--color-ink-500);
+
+  --color-paper-50: var(--color-paper-50);
+  --color-paper-200: var(--color-paper-200);
+  --color-paper-400: var(--color-paper-400);
+  --color-paper-600: var(--color-paper-600);
+
+  --color-gold-200: var(--color-gold-200);
+  --color-gold-300: var(--color-gold-300);
+  --color-gold-400: var(--color-gold-400);
+  --color-gold-500: var(--color-gold-500);
+  --color-gold-600: var(--color-gold-600);
+  --color-gold-700: var(--color-gold-700);
+  --color-gold-800: var(--color-gold-800);
+
+  --font-display: var(--font-space-grotesk), "Space Grotesk", ui-sans-serif, sans-serif;
+  --font-sans: var(--font-inter), "Inter", ui-sans-serif, sans-serif;
+  --font-mono: var(--font-plex-mono), "IBM Plex Mono", ui-monospace, monospace;
+
+  --animate-fade-up: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-fade-in: fade-in 0.9s ease-out forwards;
+  --animate-spin-slow: spin 40s linear infinite;
+  --animate-spin-reverse-slow: spin-reverse 55s linear infinite;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes spin-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+* {
+  border-color: var(--color-ink-600);
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background: var(--color-ink-950);
+  color: var(--color-paper-50);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: var(--color-gold-400);
+  color: var(--color-ink-950);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-gold-300);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.bg-grid {
+  background-image: linear-gradient(to right, color-mix(in oklab, var(--color-paper-50) 4%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in oklab, var(--color-paper-50) 4%, transparent) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
