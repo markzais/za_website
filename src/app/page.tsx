@@ -22,7 +22,7 @@ export default function HomePage() {
       <section className="relative overflow-hidden border-b border-ink-700 bg-ink-950">
         <div className="absolute inset-0 bg-grid opacity-40" aria-hidden="true" />
         <LogoMark
-          className="pointer-events-none absolute right-[-220px] top-[-160px] h-[640px] w-[640px] animate-spin-slow opacity-[0.06] md:right-[-140px] md:h-[820px] md:w-[820px]"
+          className="pointer-events-none absolute right-[-220px] top-[-160px] h-[640px] w-[640px] animate-spin-slow opacity-[0.13] md:right-[-140px] md:h-[820px] md:w-[820px]"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-ink-950" aria-hidden="true" />
 
