@@ -110,7 +110,7 @@ export default async function CapabilityDetailPage({
         <Container>
           <Reveal>
             <div className="border-l-2 border-gold-500 pl-6 md:pl-8">
-              <p className="font-mono text-xs uppercase tracking-[0.25em] text-gold-500">Proof point</p>
+              <p className="font-mono text-xs uppercase tracking-[0.25em] text-gold-500">Principal&rsquo;s experience</p>
               <p className="mt-4 max-w-2xl text-xl font-medium leading-snug text-paper-50 md:text-2xl">
                 {capability.proofPoint}
               </p>

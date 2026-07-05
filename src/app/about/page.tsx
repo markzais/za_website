@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Container, Eyebrow } from "@/components/ui/badge";
 import { Reveal } from "@/components/ui/reveal";
 import { Button } from "@/components/ui/button";
@@ -34,8 +35,8 @@ export default function AboutPage() {
                 decisions can shape yours, whatever industry you operate in.
               </p>
               <p>
-                We are a boutique practice by design. Every engagement receives senior-level attention
-                directly, not a layer of account management between you and the analysis.
+                This is a founder-led practice by design. Every engagement receives senior-level
+                attention directly — no account managers, no layers between you and the analysis.
               </p>
             </div>
           </Reveal>
@@ -47,24 +48,43 @@ export default function AboutPage() {
           <Reveal>
             <div className="border border-gold-700 bg-ink-900/60 p-10 md:p-14">
               <p className="font-mono text-xs uppercase tracking-[0.25em] text-gold-500">Principal</p>
-              <h2 className="mt-4 font-display text-3xl font-medium tracking-tight text-paper-50 sm:text-4xl">
-                Mark Zais, PhD
-              </h2>
-              <p className="mt-6 max-w-2xl text-base leading-relaxed text-paper-200">
-                Mark Zais holds a PhD in Operations Research (Business Administration) and brings more
-                than 20 years leading advanced analytics and AI strategy across defense, government,
-                academia, and industry. He is the former Chief Data Scientist of U.S. Special
-                Operations Command and a retired U.S. Army Colonel.
-              </p>
-              <a
-                href={site.principalUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-gold-300 transition-colors hover:text-gold-200"
-              >
-                Learn more about the Principal at markzais.com
-                <IconArrowUpRight className="h-4 w-4" />
-              </a>
+              <div className="mt-6 grid gap-10 md:grid-cols-[220px_1fr] md:items-start md:gap-12 lg:grid-cols-[260px_1fr]">
+                <div className="relative aspect-square w-40 overflow-hidden border border-ink-600 sm:w-52 md:w-full">
+                  <Image
+                    src="/images/headshot.png"
+                    alt="Mark Zais, PhD, Founder and Principal of Zais Analytics"
+                    fill
+                    sizes="(min-width: 768px) 260px, 208px"
+                    className="object-cover grayscale"
+                    priority
+                  />
+                </div>
+                <div>
+                  <h2 className="font-display text-3xl font-medium tracking-tight text-paper-50 sm:text-4xl">
+                    Mark Zais, PhD
+                  </h2>
+                  <p className="mt-2 text-sm font-medium uppercase tracking-[0.15em] text-gold-500">
+                    Founder and Principal
+                  </p>
+                  <p className="mt-6 max-w-2xl text-base leading-relaxed text-paper-200">
+                    Mark holds a PhD in Operations Research (Business Administration) and brings more
+                    than 20 years leading advanced analytics and AI strategy across defense, government,
+                    academia, and industry. He is the former Chief Data Scientist of U.S. Special
+                    Operations Command and a retired U.S. Army Colonel. Zais Analytics is where that
+                    experience is now applied directly, engagement by engagement, with Mark as the
+                    firm&rsquo;s sole practitioner.
+                  </p>
+                  <a
+                    href={site.principalUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-gold-300 transition-colors hover:text-gold-200"
+                  >
+                    Learn more about Mark at markzais.com
+                    <IconArrowUpRight className="h-4 w-4" />
+                  </a>
+                </div>
+              </div>
             </div>
           </Reveal>
         </Container>

@@ -35,7 +35,7 @@ export const capabilities: Capability[] = [
       "A briefing your board and your engineers will both trust.",
     ],
     proofPoint:
-      "Led enterprise AI and analytics strategy for a global organization of 70,000+ personnel and a $13B annual budget.",
+      "Mark led enterprise AI and analytics strategy for a global organization of 70,000+ personnel and a $13B annual budget.",
   },
   {
     slug: "generative-ai-and-agents",
@@ -58,7 +58,7 @@ export const capabilities: Capability[] = [
       "A retrieval-augmented generation architecture built on your enterprise knowledge.",
       "Vendor and build-vs-buy guidance free of vendor incentives.",
     ],
-    proofPoint: "Technical solutions and proposals generating $600M+ in new contract awards.",
+    proofPoint: "Mark's technical leadership on proposals and solutions has generated $600M+ in new contract awards.",
   },
   {
     slug: "ai-security-and-assurance",
@@ -82,7 +82,7 @@ export const capabilities: Capability[] = [
       "Data protection and responsible-use policy your legal team can stand behind.",
     ],
     proofPoint:
-      "Directed governance and assurance for analytics and AI programs operating in the most demanding, highest-stakes environments in government.",
+      "Mark directed governance and assurance for analytics and AI programs operating in the most demanding, highest-stakes environments in government.",
   },
   {
     slug: "operations-research-and-optimization",
@@ -106,7 +106,7 @@ export const capabilities: Capability[] = [
       "Delivery grounded in peer-reviewed, doctoral-level research.",
     ],
     proofPoint:
-      "Led development of a $1.5B global investment strategy for vehicle fleet modernization using economic analysis and simulation-optimization.",
+      "Mark led development of a $1.5B global investment strategy for vehicle fleet modernization using economic analysis and simulation-optimization.",
   },
   {
     slug: "data-science-and-machine-learning",
@@ -129,7 +129,7 @@ export const capabilities: Capability[] = [
       "A deployment path from prototype to production.",
       "Toolset depth across Python, R, SQL, SAS, MATLAB, Spark and Databricks, AWS, and Google Cloud.",
     ],
-    proofPoint: "Enterprise workforce forecasting for an organization of 547,000+ employees.",
+    proofPoint: "Mark led enterprise workforce forecasting for an organization of 547,000+ employees.",
   },
   {
     slug: "analytics-strategy-and-decision-science",
@@ -152,7 +152,7 @@ export const capabilities: Capability[] = [
       "A blueprint for a community of practice and for developing analytics talent.",
       "Direct technical mentorship for your teams.",
     ],
-    proofPoint: "Directed compensation and housing allowance analytics optimizing $2.7B annually.",
+    proofPoint: "Mark directed compensation and housing allowance analytics optimizing $2.7B annually.",
   },
 ];
 

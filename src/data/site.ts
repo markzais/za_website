@@ -5,7 +5,7 @@ export const site = {
   url: "https://www.zaisanalytics.com",
   tagline: "Decision advantage through analytics.",
   description:
-    "Zais Analytics is a boutique consulting firm in operations research, data science, and artificial intelligence, pairing doctoral technical rigor with 20+ years of executive-level strategic insight.",
+    "Zais Analytics is an independent analytics and AI practice in operations research, data science, and artificial intelligence, founded by a PhD operations researcher with 20+ years leading high-stakes decisions in defense, government, and industry.",
   shortDescription:
     "Operations research, data science, and AI consulting for decisions that carry real weight.",
   email: "info@zaisanalytics.com",

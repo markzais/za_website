@@ -2,7 +2,6 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Container, Eyebrow } from "@/components/ui/badge";
 import { Reveal } from "@/components/ui/reveal";
-import { StatItem } from "@/components/ui/stat";
 import { RadialGuides } from "@/components/motifs/radial-guides";
 import { NodeNetwork } from "@/components/motifs/node-network";
 import { LogoMark } from "@/components/logo";
@@ -11,11 +10,8 @@ import { IconArrowUpRight } from "@/components/icons";
 import { capabilities } from "@/data/capabilities";
 import { sectors } from "@/data/sectors";
 import { principles } from "@/data/approach";
-import { getStatsByTag } from "@/data/stats";
 
 export default function HomePage() {
-  const homeStats = getStatsByTag("home");
-
   return (
     <>
       {/* Hero */}
@@ -37,9 +33,9 @@ export default function HomePage() {
           </Reveal>
           <Reveal delay={160}>
             <p className="mt-8 max-w-2xl text-balance text-lg leading-relaxed text-paper-200">
-              Zais Analytics is a boutique consulting firm in operations research, data science, and
-              artificial intelligence. We pair doctoral technical rigor with two decades of executive
-              advisory experience, converting complexity into decisions leaders can act on.
+              Zais Analytics is an independent analytics and AI practice in operations research, data
+              science, and artificial intelligence — founded on two decades of executive advisory
+              experience, converting complexity into decisions leaders can act on.
             </p>
           </Reveal>
           <Reveal delay={240}>
@@ -50,24 +46,6 @@ export default function HomePage() {
               <Button href="/capabilities" variant="secondary">
                 Explore capabilities
               </Button>
-            </div>
-          </Reveal>
-        </Container>
-      </section>
-
-      {/* Proof band */}
-      <section className="relative border-b border-ink-700 bg-ink-900/40 py-16">
-        <Container>
-          <Reveal>
-            <div className="grid grid-cols-2 gap-x-8 gap-y-12 sm:grid-cols-3 lg:grid-cols-5">
-              {homeStats.map((stat, i) => (
-                <div
-                  key={stat.id}
-                  className={i > 0 ? "border-ink-600 sm:border-l sm:pl-8 lg:pl-8" : ""}
-                >
-                  <StatItem stat={stat} />
-                </div>
-              ))}
             </div>
           </Reveal>
         </Container>
