@@ -96,8 +96,8 @@ export default function HomePage() {
               </Reveal>
               <Reveal delay={140}>
                 <p className="mt-6 max-w-md text-lg leading-relaxed text-paper-400">
-                  Five principles govern every engagement, from a two-week assessment to a multi-year
-                  transformation.
+                  Five principles, consistent with the INFORMS Analytics Framework, govern every
+                  engagement, from a two-week assessment to a multi-year transformation.
                 </p>
               </Reveal>
               <Reveal delay={200}>
