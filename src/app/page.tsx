@@ -60,7 +60,7 @@ export default function HomePage() {
             </Reveal>
             <Reveal delay={80}>
               <h2 className="mt-6 text-balance font-display text-4xl font-medium tracking-tight text-paper-50 sm:text-5xl">
-                Six disciplines. One decision-science practice.
+                Multiple disciplines. One decision-science practice.
               </h2>
             </Reveal>
             <Reveal delay={140}>

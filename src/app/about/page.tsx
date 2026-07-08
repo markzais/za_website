@@ -70,9 +70,11 @@ export default function AboutPage() {
                     Mark holds a PhD in Operations Research (Business Administration) and brings more
                     than 20 years leading advanced analytics and AI strategy across defense, government,
                     academia, and industry. He is the former Chief Data Scientist of U.S. Special
-                    Operations Command and a retired U.S. Army Colonel. Zais Analytics is where that
-                    experience is now applied directly, engagement by engagement, with Mark as the
-                    firm&rsquo;s sole practitioner.
+                    Operations Command and a retired U.S. Army Colonel, having led complex,
+                    multi-disciplinary research studies for the Office of the Secretary of Defense, the
+                    Army, SOCOM, and academia. That same ability to run a large-scale study end to end,
+                    regardless of size or scale, is what Zais Analytics now applies directly, engagement
+                    by engagement.
                   </p>
                   <a
                     href={site.principalUrl}

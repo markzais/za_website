@@ -30,7 +30,7 @@ export default function IndustriesPage() {
           <Reveal delay={140}>
             <p className="mt-8 max-w-2xl text-lg leading-relaxed text-paper-400">
               Our methods were forged directing analytics and AI programs in national security, where
-              a wrong answer is measured in billions of dollars and worse. We do not consider that a
+              a wrong answer is measured in billions of dollars. We do not consider that a
               boundary. It is proof of the rigor we bring to every sector we serve.
             </p>
           </Reveal>

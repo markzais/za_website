@@ -9,7 +9,7 @@ import { capabilities } from "@/data/capabilities";
 export const metadata: Metadata = {
   title: "Capabilities",
   description:
-    "Six disciplines, one decision-science practice: AI strategy and governance, generative AI and agents, AI security and assurance, operations research and optimization, data science and machine learning, and analytics strategy and decision science.",
+    "Multiple disciplines, one decision-science practice: data science and machine learning, operations research and optimization, analytics strategy and decision science, AI security and assurance, generative AI and agents, and AI strategy and governance.",
 };
 
 export default function CapabilitiesPage() {
@@ -22,12 +22,12 @@ export default function CapabilitiesPage() {
           </Reveal>
           <Reveal delay={80}>
             <h1 className="mt-6 max-w-3xl text-balance font-display text-5xl font-medium tracking-tight text-paper-50 sm:text-6xl">
-              Capabilities built for decisions, not demos.
+              Capabilities built for decisions.
             </h1>
           </Reveal>
           <Reveal delay={140}>
             <p className="mt-8 max-w-2xl text-lg leading-relaxed text-paper-400">
-              Each pillar stands on its own, and each draws on the same doctoral rigor and executive
+              Each pillar stands on its own, each grounded in the same doctoral rigor and executive
               fluency. Engage us for a single capability or a portfolio of them.
             </p>
           </Reveal>
@@ -61,9 +61,6 @@ export default function CapabilitiesPage() {
                       {capability.name}
                     </h2>
                     <p className="mt-5 text-base leading-relaxed text-paper-400">{capability.definition}</p>
-                    <p className="mt-6 border-l-2 border-gold-600 pl-4 text-sm leading-relaxed text-paper-200">
-                      {capability.proofPoint}
-                    </p>
                     <Link
                       href={`/capabilities/${capability.slug}`}
                       className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-gold-300 transition-colors hover:text-gold-200"
