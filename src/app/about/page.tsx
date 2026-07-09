@@ -35,8 +35,21 @@ export default function AboutPage() {
                 decisions can shape yours, whatever industry you operate in.
               </p>
               <p>
-                This is a founder-led practice by design. Every engagement receives senior-level
-                attention directly — no account managers, no layers between you and the analysis.
+                That discipline matters more now, not less. As AI lowers the cost of producing
+                analysis, the scarce skill becomes knowing which analysis to trust and which decision
+                it should inform. Zais Analytics exists for that gap: framing the right problem,
+                applying the right method, and standing behind the answer with the rigor of
+                peer-reviewed research and the judgment of two decades advising leaders on decisions
+                where being wrong was expensive.
+              </p>
+              <p>
+                We solve complex problems and answer difficult questions. Our work concentrates on
+                decisions with real consequence: capital and portfolio allocation, workforce planning,
+                AI adoption and governance, and the design of analytics organizations themselves. These
+                problems share a common shape. They involve competing objectives, imperfect data, and
+                stakeholders who need to understand the answer well enough to act on it. We distill
+                that complexity into concepts that demonstrate impact, and we convert strategy into
+                actionable decision products.
               </p>
             </div>
           </Reveal>
@@ -66,16 +79,29 @@ export default function AboutPage() {
                   <p className="mt-2 text-sm font-medium uppercase tracking-[0.15em] text-gold-500">
                     Founder and Principal
                   </p>
-                  <p className="mt-6 max-w-2xl text-base leading-relaxed text-paper-200">
-                    Mark holds a PhD in Operations Research (Business Administration) and brings more
-                    than 20 years leading advanced analytics and AI strategy across defense, government,
-                    academia, and industry. He is the former Chief Data Scientist of U.S. Special
-                    Operations Command and a retired U.S. Army Colonel, having led complex,
-                    multi-disciplinary research studies for the Office of the Secretary of Defense, the
-                    Army, SOCOM, and academia. That same ability to run a large-scale study end to end,
-                    regardless of size or scale, is what Zais Analytics now applies directly, engagement
-                    by engagement.
-                  </p>
+                  <div className="mt-6 max-w-2xl space-y-4 text-base leading-relaxed text-paper-200">
+                    <p>
+                      Mark holds a PhD in Business Administration (Operations Research) from the
+                      University of Colorado at Boulder, master&apos;s degrees in Operations Research and
+                      Industrial Engineering from the Georgia Institute of Technology, and a
+                      bachelor&apos;s degree in Operations Research from the United States Military
+                      Academy at West Point. He is a Certified Analytics Professional at the Expert
+                      level (CAP-X) and serves on the INFORMS Analytics Certification Board.
+                    </p>
+                    <p>
+                      Mark brings more than 20 years leading advanced analytics and AI strategy across
+                      defense, government, academia, and industry. A retired U.S. Army Colonel and
+                      former Chief Data Scientist of U.S. Special Operations Command, he has directed
+                      complex, multi-disciplinary research studies for the Office of the Secretary of
+                      Defense, the Department of the Army, and U.S. Special Operations Command. His
+                      published research spans simulation-optimization, metaheuristics, Markov
+                      modeling, and the role of artificial intelligence in decision-making.
+                    </p>
+                    <p>
+                      Running a study end to end, from framing the question through to the decision it
+                      informs, is the discipline Zais Analytics brings to every engagement.
+                    </p>
+                  </div>
                   <a
                     href={site.principalUrl}
                     target="_blank"
