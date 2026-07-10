@@ -1,15 +1,3 @@
-export const publications: string[] = [
-  "A Simulation-Optimization Approach to Estimate Workforce Requirements",
-  "A Markov Chain Model of Military Personnel Dynamics",
-  "Optimizing Simulation Fidelity for Cost-Effective Aviation Training",
-  "Artificial Intelligence: A Decisionmaking Technology",
-  "Big Data for Generals... and Everyone Else over 40",
-];
-
-export const awards: string[] = [
-  "First Place, Chairman of the Joint Chiefs of Staff National Defense Strategy Paper Award (2020)",
-];
-
 export type Certification = {
   name: string;
   org: string;
@@ -20,4 +8,28 @@ export const certifications: Certification[] = [
   { name: "Analytics Certification Board Member", org: "INFORMS" },
   { name: "AWS Certified Cloud Practitioner", org: "Amazon Web Services" },
   { name: "Google Cloud Digital Leader", org: "Google Cloud" },
+];
+
+export type SkillCategory = {
+  category: string;
+  items: string[];
+};
+
+export const technicalSkills: SkillCategory[] = [
+  {
+    category: "Programming & Analytics",
+    items: ["Python", "R", "SAS", "SQL", "SPSS", "MATLAB", "Minitab", "Arena", "ProModel", "LaTeX"],
+  },
+  {
+    category: "AI Coding",
+    items: ["Cursor", "VS Code", "Antigravity", "Claude Code", "OpenAI Codex", "GitHub Copilot"],
+  },
+  {
+    category: "Visualization & BI",
+    items: ["Power BI", "Tableau", "Posit (R Shiny)", "Microsoft Office Suite (Advanced)"],
+  },
+  {
+    category: "Cloud Platforms",
+    items: ["Azure", "AWS", "Google Cloud"],
+  },
 ];

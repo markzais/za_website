@@ -4,7 +4,7 @@ import { Container, Eyebrow } from "@/components/ui/badge";
 import { Reveal } from "@/components/ui/reveal";
 import { Button } from "@/components/ui/button";
 import { IconArrowUpRight } from "@/components/icons";
-import { certifications, publications, awards } from "@/data/research";
+import { certifications, technicalSkills } from "@/data/research";
 import { site } from "@/data/site";
 
 export const metadata: Metadata = {
@@ -137,20 +137,15 @@ export default function AboutPage() {
 
             <Reveal delay={100}>
               <p className="font-mono text-xs uppercase tracking-[0.25em] text-gold-500">
-                Selected publications and recognition
+                Technical skills and tools
               </p>
               <ul className="mt-6 flex flex-col gap-5">
-                {publications.map((pub) => (
-                  <li key={pub} className="border-l-2 border-ink-600 pl-4 text-sm leading-relaxed text-paper-200">
-                    {pub}
-                  </li>
-                ))}
-                {awards.map((award) => (
-                  <li
-                    key={award}
-                    className="border-l-2 border-gold-600 pl-4 text-sm leading-relaxed text-gold-200"
-                  >
-                    {award}
+                {technicalSkills.map((group) => (
+                  <li key={group.category} className="border-l-2 border-ink-600 pl-4">
+                    <p className="text-base font-medium text-paper-50">{group.category}</p>
+                    <p className="mt-1 text-sm leading-relaxed text-paper-400">
+                      {group.items.join(", ")}
+                    </p>
                   </li>
                 ))}
               </ul>
