@@ -31,14 +31,14 @@ export function FrameworkDiagram() {
         onClick={() => setOpen(true)}
         aria-haspopup="dialog"
         aria-label="Expand the INFORMS Analytics Framework diagram to read it in full"
-        className="group relative block w-48 shrink-0 cursor-zoom-in rounded-full sm:w-60 md:w-64 lg:w-72"
+        className="group relative block w-60 shrink-0 cursor-zoom-in rounded-full sm:w-72 md:w-80 lg:w-96"
       >
         <div className="relative aspect-square scale-100 transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-125 group-focus-visible:scale-125">
           <Image
             src="/images/framework.png"
             alt={ALT_TEXT}
             fill
-            sizes="(min-width: 1024px) 288px, (min-width: 640px) 240px, 192px"
+            sizes="(min-width: 1024px) 384px, (min-width: 768px) 320px, (min-width: 640px) 288px, 240px"
             className="rounded-full object-contain opacity-80 drop-shadow-[0_0_40px_rgba(0,0,0,0.5)] transition-opacity duration-500 group-hover:opacity-100 group-focus-visible:opacity-100"
           />
         </div>

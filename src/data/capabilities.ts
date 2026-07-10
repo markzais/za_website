@@ -39,7 +39,8 @@ export const capabilities: Capability[] = [
     icon: "optimization",
     name: "Operations Research and Optimization",
     shortName: "Operations Research",
-    summary: "Mathematical modeling for resource allocation, scheduling, logistics, and investment planning.",
+    summary:
+      "Mathematical modeling for resource allocation, scheduling, logistics, and investment planning under uncertainty.",
     definition:
       "We build mathematical models for resource allocation, scheduling, logistics, and investment planning, backed by doctoral research and peer-reviewed publication. That includes simulation and simulation-optimization for capital and portfolio decisions, metaheuristics and large-scale optimization such as tabu search, GRASP, dynamic programming, and Markov models, and rigorous economic and cost-benefit analysis.",
     whenToEngage: [
@@ -61,7 +62,8 @@ export const capabilities: Capability[] = [
     icon: "decision-science",
     name: "Analytics Strategy and Decision Science",
     shortName: "Decision Science",
-    summary: "Enterprise analytics strategy, operating models, and decision-ready products.",
+    summary:
+      "Enterprise analytics strategy, operating models, and decision-ready products that drive decisive action.",
     definition:
       "We build enterprise analytics strategy, operating models, and governance, then translate the output into executive decision support: distilling complexity into decision-ready products rather than dashboards no one opens. This includes building analytics organizations, communities of practice, and data governance bodies, plus direct analytics talent development and technical mentorship.",
     whenToEngage: [
@@ -105,7 +107,7 @@ export const capabilities: Capability[] = [
     icon: "generative",
     name: "Generative AI and AI Agents",
     shortName: "Generative AI",
-    summary: "Applied generative AI and agentic systems, built for measured adoption.",
+    summary: "Applied generative AI and agentic systems, built for measured, responsible adoption at scale.",
     definition:
       "We take generative AI from use-case discovery through evaluation and deployment strategy. That includes agentic workflow and automation design, retrieval-augmented generation over enterprise knowledge, build-vs-buy and vendor evaluation, and human-in-the-loop design wherever a decision carries real consequence.",
     whenToEngage: [

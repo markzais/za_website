@@ -119,6 +119,15 @@ export default function HomePage() {
                   </div>
                 </Reveal>
               ))}
+              <Reveal delay={270} className="py-7">
+                <Link href="/approach" className="group flex items-center gap-6">
+                  <span className="font-mono text-sm text-gold-700">+2</span>
+                  <span className="inline-flex items-center gap-2 text-sm font-medium text-paper-400 transition-colors duration-200 group-hover:text-gold-300">
+                    See the other two principles
+                    <IconArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                  </span>
+                </Link>
+              </Reveal>
             </div>
           </div>
         </Container>
@@ -186,7 +195,7 @@ export default function HomePage() {
           </Reveal>
           <Reveal delay={100}>
             <p className="mx-auto mt-6 max-w-xl text-lg text-paper-400">
-              {"We respond within one business day."}
+              {"Clarity for complex decisions"}
             </p>
           </Reveal>
           <Reveal delay={180}>
