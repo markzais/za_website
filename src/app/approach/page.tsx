@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Container, Eyebrow } from "@/components/ui/badge";
 import { Reveal } from "@/components/ui/reveal";
 import { Button } from "@/components/ui/button";
+import { FrameworkDiagram } from "@/components/framework-diagram";
 import { principles } from "@/data/approach";
 
 export const metadata: Metadata = {
@@ -15,22 +16,29 @@ export default function ApproachPage() {
     <>
       <section className="relative border-b border-ink-700 py-24 md:py-28">
         <Container>
-          <Reveal>
-            <Eyebrow>Approach</Eyebrow>
-          </Reveal>
-          <Reveal delay={80}>
-            <h1 className="mt-6 max-w-3xl text-balance font-display text-5xl font-medium tracking-tight text-paper-50 sm:text-6xl">
-              Method, not magic.
-            </h1>
-          </Reveal>
-          <Reveal delay={140}>
-            <p className="mt-8 max-w-2xl text-lg leading-relaxed text-paper-400">
-              Analytics and AI engagements succeed for predictable reasons: the right problem, a
-              right-sized solution, and a decision instead of an artifact. Five principles, consistent
-              with the INFORMS Analytics Framework, keep every Zais Analytics engagement pointed at
-              what matters, from a two-week assessment to a multi-year transformation.
-            </p>
-          </Reveal>
+          <div className="flex flex-col gap-10 md:flex-row md:items-center md:justify-between md:gap-14">
+            <div className="min-w-0">
+              <Reveal>
+                <Eyebrow>Approach</Eyebrow>
+              </Reveal>
+              <Reveal delay={80}>
+                <h1 className="mt-6 max-w-3xl text-balance font-display text-5xl font-medium tracking-tight text-paper-50 sm:text-6xl">
+                  A disciplined path from problem to decision.
+                </h1>
+              </Reveal>
+              <Reveal delay={140}>
+                <p className="mt-8 max-w-2xl text-lg leading-relaxed text-paper-400">
+                  Analytics and AI engagements succeed for predictable reasons: the right problem, a
+                  right-sized solution, and a decision instead of an artifact. Five principles, consistent
+                  with the INFORMS Analytics Framework, keep every Zais Analytics engagement pointed at
+                  what matters, from a two-week assessment to a multi-year transformation.
+                </p>
+              </Reveal>
+            </div>
+            <Reveal delay={100} className="flex justify-center md:block md:shrink-0">
+              <FrameworkDiagram />
+            </Reveal>
+          </div>
         </Container>
       </section>
 
