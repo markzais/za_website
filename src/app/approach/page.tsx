@@ -8,7 +8,7 @@ import { principles } from "@/data/approach";
 export const metadata: Metadata = {
   title: "Approach",
   description:
-    "Five principles, consistent with the INFORMS Analytics Framework, govern every Zais Analytics engagement: find the real problem, right-size the solution, build for decisions not dashboards, translate at every level, and transfer capability.",
+    "Five principles, consistent with the INFORMS Analytics Framework, guide every Zais Analytics engagement: find the real problem, right-size the solution, drive every deliverable toward a decision, translate at every level, and transfer capability.",
 };
 
 export default function ApproachPage() {
@@ -30,8 +30,8 @@ export default function ApproachPage() {
                 <p className="mt-8 max-w-2xl text-lg leading-relaxed text-paper-400">
                   Analytics and AI engagements succeed for predictable reasons: the right problem, a
                   right-sized solution, and a decision instead of an artifact. Five principles, consistent
-                  with the INFORMS Analytics Framework, keep every Zais Analytics engagement pointed at
-                  what matters, from a two-week assessment to a multi-year transformation.
+                  with the INFORMS Analytics Framework, guide every Zais Analytics engagement, from a
+                  two-week assessment to a multi-year transformation.
                 </p>
               </Reveal>
             </div>
