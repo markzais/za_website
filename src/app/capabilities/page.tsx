@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Container, Eyebrow } from "@/components/ui/badge";
 import { Reveal } from "@/components/ui/reveal";
 import { Button } from "@/components/ui/button";
+import { CapabilitiesDiagram } from "@/components/capabilities-diagram";
 import { capabilityIconMap, IconArrowUpRight, IconCheck } from "@/components/icons";
 import { capabilities } from "@/data/capabilities";
 
@@ -17,20 +18,27 @@ export default function CapabilitiesPage() {
     <>
       <section className="relative border-b border-ink-700 py-24 md:py-28">
         <Container>
-          <Reveal>
-            <Eyebrow>Capabilities</Eyebrow>
-          </Reveal>
-          <Reveal delay={80}>
-            <h1 className="mt-6 max-w-3xl text-balance font-display text-5xl font-medium tracking-tight text-paper-50 sm:text-6xl">
-              Capabilities built for decisions.
-            </h1>
-          </Reveal>
-          <Reveal delay={140}>
-            <p className="mt-8 max-w-2xl text-lg leading-relaxed text-paper-400">
-              Each pillar stands on its own, each grounded in the same doctoral rigor and executive
-              fluency. Engage us for a single capability or a portfolio of them.
-            </p>
-          </Reveal>
+          <div className="flex flex-col gap-10 md:flex-row md:items-center md:justify-between md:gap-14">
+            <div className="min-w-0">
+              <Reveal>
+                <Eyebrow>Capabilities</Eyebrow>
+              </Reveal>
+              <Reveal delay={80}>
+                <h1 className="mt-6 max-w-3xl text-balance font-display text-5xl font-medium tracking-tight text-paper-50 sm:text-6xl">
+                  Capabilities built for decisions.
+                </h1>
+              </Reveal>
+              <Reveal delay={140}>
+                <p className="mt-8 max-w-2xl text-lg leading-relaxed text-paper-400">
+                  Each pillar stands on its own, each grounded in the same doctoral rigor and executive
+                  fluency. Engage us for a single capability or a portfolio of them.
+                </p>
+              </Reveal>
+            </div>
+            <Reveal delay={100} className="flex justify-center md:block md:shrink-0">
+              <CapabilitiesDiagram />
+            </Reveal>
+          </div>
         </Container>
       </section>
 
