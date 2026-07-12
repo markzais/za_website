@@ -3,6 +3,7 @@ import { Container, Eyebrow, Badge } from "@/components/ui/badge";
 import { Reveal } from "@/components/ui/reveal";
 import { Button } from "@/components/ui/button";
 import { NodeNetwork } from "@/components/motifs/node-network";
+import { IndustriesDiagram } from "@/components/industries-diagram";
 import { sectors } from "@/data/sectors";
 
 export const metadata: Metadata = {
@@ -19,21 +20,28 @@ export default function IndustriesPage() {
       <section className="relative overflow-hidden border-b border-ink-700 py-24 md:py-28">
         <NodeNetwork className="right-[-40px] top-[-20px] h-[300px] w-[380px] opacity-40" />
         <Container className="relative">
-          <Reveal>
-            <Eyebrow>Industries</Eyebrow>
-          </Reveal>
-          <Reveal delay={80}>
-            <h1 className="mt-6 max-w-3xl text-balance font-display text-5xl font-medium tracking-tight text-paper-50 sm:text-6xl">
-              Proven where the stakes are highest. Applied everywhere.
-            </h1>
-          </Reveal>
-          <Reveal delay={140}>
-            <p className="mt-8 max-w-2xl text-lg leading-relaxed text-paper-400">
-              Our methods were forged directing analytics and AI programs in national security, where
-              a wrong answer is measured in billions of dollars. We do not consider that a
-              boundary. It is proof of the rigor we bring to every sector we serve.
-            </p>
-          </Reveal>
+          <div className="flex flex-col gap-10 md:flex-row md:items-center md:justify-between md:gap-14">
+            <div className="min-w-0">
+              <Reveal>
+                <Eyebrow>Industries</Eyebrow>
+              </Reveal>
+              <Reveal delay={80}>
+                <h1 className="mt-6 max-w-3xl text-balance font-display text-5xl font-medium tracking-tight text-paper-50 sm:text-6xl">
+                  Proven where the stakes are highest. Applied everywhere.
+                </h1>
+              </Reveal>
+              <Reveal delay={140}>
+                <p className="mt-8 max-w-2xl text-lg leading-relaxed text-paper-400">
+                  Our methods were forged directing analytics and AI programs in national security, where
+                  a wrong answer is measured in billions of dollars. We do not consider that a
+                  boundary. It is proof of the rigor we bring to every sector we serve.
+                </p>
+              </Reveal>
+            </div>
+            <Reveal delay={100} className="flex justify-center md:block md:shrink-0">
+              <IndustriesDiagram />
+            </Reveal>
+          </div>
         </Container>
       </section>
 

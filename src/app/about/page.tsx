@@ -23,32 +23,30 @@ export default function AboutPage() {
           </Reveal>
           <Reveal delay={80}>
             <h1 className="mt-6 max-w-3xl text-balance font-display text-5xl font-medium tracking-tight text-paper-50 sm:text-6xl">
-              Built on decision-science rigor.
+              Built on decision&#8209;science rigor.
             </h1>
           </Reveal>
           <Reveal delay={140}>
             <div className="mt-8 max-w-2xl space-y-5 text-lg leading-relaxed text-paper-400">
               <p>
-                Zais Analytics was founded to bring decision-science rigor honed in national security
-                and enterprise analytics leadership to organizations in every sector. The premise is
-                simple: the same mathematical discipline that shapes billion-dollar defense investment
-                decisions can shape yours, whatever industry you operate in.
+                Zais Analytics was founded to bring decision&#8209;science rigor honed in national
+                security and enterprise analytics leadership to organizations in every sector. The
+                same mathematical discipline that shapes billion-dollar defense investment decisions
+                can shape yours, whatever industry you operate in.
               </p>
               <p>
                 That discipline matters more now, not less. As AI lowers the cost of producing
-                analysis, the scarce skill becomes knowing which analysis to trust and which decision
-                it should inform. Zais Analytics exists for that gap: framing the right problem,
-                applying the right method, and standing behind the answer with the rigor of
-                peer-reviewed research and the judgment of two decades advising leaders on decisions
-                where being wrong was expensive.
+                analysis, the scarce skill is knowing which analysis to trust, a judgment built on
+                peer-reviewed research and two decades advising leaders on decisions where being wrong
+                was expensive.
               </p>
               <p>
-                We solve complex problems and answer difficult questions. Our work concentrates on
-                decisions with real consequence: capital and portfolio allocation, workforce planning,
-                AI adoption and governance, and the design of analytics organizations themselves. These
-                problems share a common shape. They involve competing objectives, imperfect data, and
-                stakeholders who need to understand the answer well enough to act on it. We distill
-                that complexity into concepts that demonstrate impact, and we convert strategy into
+                We solve complex problems and answer difficult questions, concentrating on decisions
+                with real consequence: capital and portfolio allocation, workforce planning, AI
+                adoption and governance, and helping organizations build their own internal analytics
+                capability. These problems share a common shape: competing objectives, imperfect data,
+                and stakeholders who need to understand the answer well enough to act on it. We distill
+                that complexity into concepts that demonstrate impact and convert strategy into
                 actionable decision products.
               </p>
             </div>
