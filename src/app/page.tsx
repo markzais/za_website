@@ -33,9 +33,10 @@ export default function HomePage() {
           </Reveal>
           <Reveal delay={160}>
             <p className="mt-8 max-w-2xl text-balance text-lg leading-relaxed text-paper-200">
-              Zais Analytics is an independent analytics and AI practice in operations research, data
-              science, and artificial intelligence — founded on two decades of executive advisory
-              experience, converting complexity into decisions leaders can act on.
+              Zais Analytics is an independent analytics and AI practice specializing in operations
+              research, data science, and artificial intelligence. Rooted in two decades of hands-on
+              technical practice and senior advisory experience, Zais Analytics helps organizations
+              turn complex data, systems, and tradeoffs into decisions leaders can act on.
             </p>
           </Reveal>
           <Reveal delay={240}>
