@@ -10,6 +10,7 @@ import { IconArrowUpRight } from "@/components/icons";
 import { capabilities } from "@/data/capabilities";
 import { sectors } from "@/data/sectors";
 import { principles } from "@/data/approach";
+import { site } from "@/data/site";
 
 export default function HomePage() {
   return (
@@ -48,6 +49,21 @@ export default function HomePage() {
                 Explore capabilities
               </Button>
             </div>
+          </Reveal>
+          <Reveal delay={300}>
+            <a
+              href={site.sbaProfileUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group mt-10 inline-flex flex-wrap items-center gap-x-3 gap-y-1 font-mono text-xs uppercase tracking-[0.2em] text-paper-400 transition-colors hover:text-gold-300"
+            >
+              <span className="text-gold-500">SBA</span>
+              <span>SDVOSB Certified</span>
+              <span aria-hidden="true">&middot;</span>
+              <span>VOSB Certified</span>
+              <IconArrowUpRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              <span className="sr-only">(view certification profile on the SBA website)</span>
+            </a>
           </Reveal>
         </Container>
       </section>

@@ -10,8 +10,23 @@ import { site } from "@/data/site";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Zais Analytics brings decision-science rigor honed in national security and enterprise analytics leadership to organizations in every sector.",
+    "Zais Analytics is an SBA SDVOSB Certified and VOSB Certified firm bringing decision-science rigor honed in national security and enterprise analytics leadership to organizations in every sector.",
 };
+
+const smallBusinessCertifications = [
+  {
+    label: "SDVOSB Certified",
+    program: "Service-Disabled Veteran-Owned Small Business",
+    src: "/images/sba-sdvosb-certified.png",
+    alt: "U.S. Small Business Administration Service-Disabled Veteran-Owned Certified logo (SDVOSB Certified)",
+  },
+  {
+    label: "VOSB Certified",
+    program: "Veteran-Owned Small Business",
+    src: "/images/sba-vosb-certified.png",
+    alt: "U.S. Small Business Administration Veteran-Owned Certified logo (VOSB Certified)",
+  },
+];
 
 export default function AboutPage() {
   return (
@@ -26,31 +41,86 @@ export default function AboutPage() {
               Built on decision&#8209;science rigor.
             </h1>
           </Reveal>
-          <Reveal delay={140}>
-            <div className="mt-8 max-w-2xl space-y-5 text-lg leading-relaxed text-paper-400">
-              <p>
-                Zais Analytics was founded to bring decision&#8209;science rigor honed in national
-                security and enterprise analytics leadership to organizations in every sector. The
-                same mathematical discipline that shapes billion-dollar defense investment decisions
-                can shape yours, whatever industry you operate in.
-              </p>
-              <p>
-                That discipline matters more now, not less. As AI lowers the cost of producing
-                analysis, the scarce skill is knowing which analysis to trust, a judgment built on
-                peer-reviewed research and two decades advising leaders on decisions where being wrong
-                was expensive.
-              </p>
-              <p>
-                We solve complex problems and answer difficult questions, concentrating on decisions
-                with real consequence: capital and portfolio allocation, workforce planning, AI
-                adoption and governance, and helping organizations build their own internal analytics
-                capability. These problems share a common shape: competing objectives, imperfect data,
-                and stakeholders who need to understand the answer well enough to act on it. We distill
-                that complexity into concepts that demonstrate impact and convert strategy into
-                actionable decision products.
-              </p>
-            </div>
-          </Reveal>
+          <div className="mt-8 grid gap-12 lg:grid-cols-[minmax(0,42rem)_1fr] lg:gap-16">
+            <Reveal delay={140}>
+              <div className="max-w-2xl space-y-5 text-lg leading-relaxed text-paper-400">
+                <p>
+                  Zais Analytics was founded to bring decision&#8209;science rigor honed in national
+                  security and enterprise analytics leadership to organizations in every sector. The
+                  same mathematical discipline that shapes billion-dollar defense investment decisions
+                  can shape yours, whatever industry you operate in.
+                </p>
+                <p>
+                  That discipline matters more now, not less. As AI lowers the cost of producing
+                  analysis, the scarce skill is knowing which analysis to trust, a judgment built on
+                  peer-reviewed research and two decades advising leaders on decisions where being wrong
+                  was expensive.
+                </p>
+                <p>
+                  We solve complex problems and answer difficult questions, concentrating on decisions
+                  with real consequence: capital and portfolio allocation, workforce planning, AI
+                  adoption and governance, and helping organizations build their own internal analytics
+                  capability. These problems share a common shape: competing objectives, imperfect data,
+                  and stakeholders who need to understand the answer well enough to act on it. We distill
+                  that complexity into concepts that demonstrate impact and convert strategy into
+                  actionable decision products.
+                </p>
+              </div>
+            </Reveal>
+
+            <Reveal delay={200}>
+              <div className="lg:pt-1">
+                <p className="font-mono text-xs uppercase tracking-[0.25em] text-gold-500">
+                  SBA certifications
+                </p>
+                <ul className="mt-6 grid max-w-md grid-cols-2 gap-6">
+                  {smallBusinessCertifications.map((cert) => (
+                    <li key={cert.label}>
+                      <a
+                        href={site.sbaProfileUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group block"
+                      >
+                        <div className="relative aspect-[4/5] w-full transition-opacity group-hover:opacity-90">
+                          <Image
+                            src={cert.src}
+                            alt={cert.alt}
+                            fill
+                            sizes="(min-width: 1024px) 200px, 45vw"
+                            className="object-contain"
+                          />
+                        </div>
+                        <p className="mt-4 text-base font-medium text-paper-50 transition-colors group-hover:text-gold-300">
+                          {cert.label}
+                        </p>
+                        <p className="text-sm text-paper-400">{cert.program}</p>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-6 max-w-md space-y-2 text-sm leading-relaxed text-paper-400">
+                  <p>
+                    Certified Service-Disabled Veteran-Owned Small Business (SDVOSB) by the U.S.
+                    Small Business Administration (SBA).
+                  </p>
+                  <p>
+                    Certified Veteran-Owned Small Business (VOSB) by the U.S. Small Business
+                    Administration (SBA).
+                  </p>
+                </div>
+                <a
+                  href={site.sbaProfileUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-gold-300 transition-colors hover:text-gold-200"
+                >
+                  Verify our certifications on SBA.gov
+                  <IconArrowUpRight className="h-4 w-4" />
+                </a>
+              </div>
+            </Reveal>
+          </div>
         </Container>
       </section>
 

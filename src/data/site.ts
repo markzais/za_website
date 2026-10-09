@@ -14,6 +14,7 @@ export const site = {
   responseTime: "We respond within one business day.",
   founded: 2024,
   principalUrl: "https://markzais.com",
+  sbaProfileUrl: "https://search.certifications.sba.gov/profile/P41VQFGSRLA5/24MH5?page=1",
 } as const;
 
 export const navLinks = [
