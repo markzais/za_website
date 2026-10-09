@@ -166,8 +166,8 @@ export default function HomePage() {
             <Reveal delay={140}>
               <p className="mt-6 text-lg leading-relaxed text-paper-400">
                 Our methods were forged in national security, where a wrong answer is measured in
-                billions of dollars. The same rigor now serves commercial enterprise, healthcare,
-                finance, logistics, energy, and technology.
+                billions of dollars. The same rigor now serves property insurance and claims, real
+                estate, commercial enterprise, healthcare, finance, logistics, energy, and technology.
               </p>
             </Reveal>
           </div>

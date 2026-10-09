@@ -4,12 +4,12 @@ import { Reveal } from "@/components/ui/reveal";
 import { Button } from "@/components/ui/button";
 import { NodeNetwork } from "@/components/motifs/node-network";
 import { IndustriesDiagram } from "@/components/industries-diagram";
-import { sectors } from "@/data/sectors";
+import { damageIntelligence, sectors } from "@/data/sectors";
 
 export const metadata: Metadata = {
   title: "Industries",
   description:
-    "Zais Analytics methods were proven in national security, where the stakes are highest, and now apply across federal and public sector, logistics, financial services, healthcare, energy, and technology.",
+    "Zais Analytics methods were proven in national security, where the stakes are highest, and now apply across property insurance and claims, real estate, federal and public sector, logistics, financial services, healthcare, energy, and technology.",
 };
 
 export default function IndustriesPage() {
@@ -72,6 +72,48 @@ export default function IndustriesPage() {
                 </p>
               )}
             </div>
+          </Reveal>
+        </Container>
+      </section>
+
+      <section className="border-b border-ink-700 py-20">
+        <Container>
+          <Reveal>
+            <div className="flex flex-wrap items-center gap-4">
+              <p className="font-mono text-xs uppercase tracking-[0.25em] text-gold-500">Featured work</p>
+              <Badge>{damageIntelligence.sector}</Badge>
+            </div>
+          </Reveal>
+          <Reveal delay={80}>
+            <h2 className="mt-6 font-display text-3xl font-medium tracking-tight text-paper-50 sm:text-4xl">
+              {damageIntelligence.title}
+            </h2>
+          </Reveal>
+          <Reveal delay={140}>
+            <p className="mt-6 max-w-3xl text-base leading-relaxed text-paper-200">
+              {damageIntelligence.summary}
+            </p>
+          </Reveal>
+          <ol className="mt-10 grid gap-px overflow-hidden bg-ink-600 md:grid-cols-3">
+            {damageIntelligence.steps.map((step, i) => (
+              <Reveal
+                key={step.stage}
+                as="li"
+                delay={200 + i * 80}
+                className={`flex flex-col bg-ink-950 p-8 ${
+                  i === damageIntelligence.steps.length - 1 ? "outline outline-1 -outline-offset-1 outline-gold-600" : ""
+                }`}
+              >
+                <p className="font-mono text-xs uppercase tracking-[0.25em] text-gold-500">
+                  <span className="text-gold-700">0{i + 1}</span> {step.stage}
+                </p>
+                <h3 className="mt-4 font-display text-xl font-medium text-paper-50">{step.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-paper-400">{step.body}</p>
+              </Reveal>
+            ))}
+          </ol>
+          <Reveal delay={460}>
+            <p className="mt-10 text-lg text-paper-200">{damageIntelligence.closing}</p>
           </Reveal>
         </Container>
       </section>
