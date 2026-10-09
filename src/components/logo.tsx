@@ -19,9 +19,9 @@ export function Wordmark({ className }: { className?: string }) {
   return (
     <span className={`flex flex-col leading-none ${className ?? ""}`}>
       <span className="font-display font-semibold tracking-tight">
-        <span className="text-paper-50">Z</span>
-        <span className="text-gold-300">AI</span>
-        <span className="text-paper-50">S</span>
+        <span className="text-gold-300">Z</span>
+        <span className="text-paper-50">AI</span>
+        <span className="text-gold-300">S</span>
       </span>
       <span className="font-mono text-[0.55em] tracking-[0.34em] text-gold-400">ANALYTICS</span>
     </span>
